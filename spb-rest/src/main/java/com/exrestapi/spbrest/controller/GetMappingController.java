@@ -1,6 +1,6 @@
 package com.exrestapi.spbrest.controller;
 
-import com.exrestapi.spbrest.RequestDTO.MemberDTO;
+import com.exrestapi.spbrest.DTO.MemberDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
