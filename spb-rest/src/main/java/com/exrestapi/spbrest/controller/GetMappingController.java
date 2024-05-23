@@ -4,11 +4,9 @@ import com.exrestapi.spbrest.RequestDTO.MemberDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-
 @RestController
 @Slf4j
-public class HomeController {
+public class GetMappingController {
 
     @GetMapping("/home")
     public String home() {
