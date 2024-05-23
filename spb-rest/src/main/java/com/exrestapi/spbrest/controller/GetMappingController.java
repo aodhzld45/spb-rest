@@ -1,16 +1,20 @@
 package com.exrestapi.spbrest.controller;
 
 import com.exrestapi.spbrest.DTO.MemberDTO;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
+@Controller
+@RequiredArgsConstructor
 @Slf4j
 public class GetMappingController {
-
     @GetMapping("/home")
-    public String home() {
-        return "{home}";
+    public String home(Model model) {
+        model.addAttribute("data", "Hello <b>Spring</b>!");
+        return "home";
     }
 
     @GetMapping("/home2")
